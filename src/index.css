@@ -2111,7 +2111,7 @@ img {
     -webkit-mask-image: none;
   }
   .hero-1-video { object-position: center 30%; }
-  .hero-1-video-dark { background: rgba(10, 5, 3, 0.62); }
+  .hero-1-video-dark { background: rgba(10, 5, 3, 0.28); }
   .hero-1-left-gradient {
     right: 0;
     background: linear-gradient(180deg, rgba(10,6,5,.5) 0%, rgba(10,6,5,.92) 65%);
