@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
 import { gsap, ScrollTrigger } from '../../lib/gsap'
 
@@ -78,17 +79,12 @@ function HeroCinematic() {
         </p>
 
         <div className="hero-actions h1-actions">
-          <a
-            href="https://order.toasttab.com/online/isekai-sushi-and-cafe-5717-gunn-hwy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-red"
-          >
+          <Link to="/order" className="btn-red">
             Order Online
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
-          </a>
+          </Link>
           <a href="/menu" className="btn-ghost-light">View Menu</a>
           <a href="/catering" className="btn-text-gold">
             Book Catering
@@ -147,17 +143,12 @@ function HeroEditorial() {
         </p>
 
         <div className="hero-actions h2-actions">
-          <a
-            href="https://order.toasttab.com/online/isekai-sushi-and-cafe-5717-gunn-hwy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-red"
-          >
+          <Link to="/order" className="btn-red">
             Order Online
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
-          </a>
+          </Link>
           <a href="/menu" className="btn-ghost-dark">View Menu</a>
         </div>
       </div>
@@ -202,14 +193,7 @@ function HeroStacked() {
         </p>
 
         <div className="hero-actions h3-actions" style={{ justifyContent: 'center', marginBottom: '48px' }}>
-          <a
-            href="https://order.toasttab.com/online/isekai-sushi-and-cafe-5717-gunn-hwy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-red"
-          >
-            Order Online
-          </a>
+          <Link to="/order" className="btn-red">Order Online</Link>
           <a href="/menu" className="btn-ghost-dark">View Menu</a>
         </div>
 

@@ -44,14 +44,9 @@ export default function Navbar() {
           ))}
         </div>
 
-        <a
-          href="https://order.toasttab.com/online/isekai-sushi-and-cafe-5717-gunn-hwy"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="nav-cta"
-        >
+        <Link to="/order" className="nav-cta">
           Order Online
-        </a>
+        </Link>
 
         <button
           className="nav-mobile-toggle"
@@ -75,15 +70,13 @@ export default function Navbar() {
             {l.label}
           </Link>
         ))}
-        <a
-          href="https://order.toasttab.com/online/isekai-sushi-and-cafe-5717-gunn-hwy"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          to="/order"
           className="nav-mobile-cta"
           onClick={() => setOpen(false)}
         >
           Order Online
-        </a>
+        </Link>
       </div>
     </nav>
   )
